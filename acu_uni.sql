@@ -98,19 +98,6 @@ insert into section_teacher (section_id, teacher_id, evaluation_rating) values (
 insert into section_teacher (section_id, teacher_id, evaluation_rating) values (10150, 006, '10');
 insert into section_teacher (section_id, teacher_id, evaluation_rating) values (10150, 007, '9');
 
---
-select * from student;
-select * from section;
-select * from student_section;
-select * from course;
-select * from teacher;
-select * from section_teacher;
-
---
-alter table student_section add constraint stu foreign key (student_id) references student(id) on delete restrict;
-alter table student_section add constraint b foreign key (crn_id) references section(crn) on delete restrict;
-alter table section_teacher add constraint c foreign key (section_id) references section(crn) on delete restrict;
-alter table section_teacher add constraint d foreign key (teacher_id) references teacher(id) on delete restrict;
 
                                                                                                           
                                                                                                           
