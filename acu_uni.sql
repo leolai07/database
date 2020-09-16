@@ -111,3 +111,8 @@ alter table student_section add constraint stu foreign key (student_id) referenc
 alter table student_section add constraint b foreign key (crn_id) references section(crn) on delete restrict;
 alter table section_teacher add constraint c foreign key (section_id) references section(crn) on delete restrict;
 alter table section_teacher add constraint d foreign key (teacher_id) references teacher(id) on delete restrict;
+
+                                                                                                          
+                                                                                                          
+                                                                                                          
+                                                                                                          
